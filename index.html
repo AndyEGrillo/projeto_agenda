@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+       
+        <h1>Agenda de contatos</h1>
+
+        <form id="form-contatos">
+            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="telefone" name="telefone" pattern="\d{10,}" title="Informe um número de telefone válido (mínimo 10 dígitos)" required>
+            <button type="button" onclick="novoCadastro()">Novo contato</button>
+        </form>
+
+        <table id="tabelaRegistro">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </table>
+
+  </div>
+
+  <script src="./main.js"></script>
+
+</body>
+</html>
